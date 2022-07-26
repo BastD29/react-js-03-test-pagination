@@ -1,0 +1,59 @@
+*,
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 20px;
+}
+
+.prev-btn,
+.page-btn,
+.next-btn {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.page-btn {
+    background-color: transparent;
+}
+
+.active-btn {
+    color: red;
+}
+
+@media (min-width: 768px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .btn-container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
